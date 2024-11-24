@@ -1,0 +1,285 @@
+.root4 {
+  padding: 10rem 0rem;
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+.gridContainer4 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+}
+
+.gridContainer4 .gridItem4 {
+  padding: 0rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gridItem4 h2 {
+  font-family: "Gilroy-Bold";
+  color: rgba(229, 132, 17, 1);
+}
+
+.gridItem4 h1 {
+  font-size: 3rem;
+  font-family: "Gilroy-Bold";
+  color: rgba(30, 30, 30, 1);
+}
+
+.gridItem4 p {
+  font-family: "Gilroy-Regular";
+  color: rgba(30, 30, 30, 1);
+  max-width: 97%;
+  text-align: justify;
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+.gridItem4 span {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Gilroy-Medium";
+  color: rgba(229, 132, 17, 1);
+  margin-bottom: 1rem;
+}
+
+.gridContainer4 .semiContainer {
+  display: grid;
+  grid-template-columns: 35% 61%;
+  align-items: start;
+  justify-content: flex-end;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.semiContainer .gridItem6 {
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.semiContainer .gridItem6 img {
+  width: 100%;
+  height: 100%;
+  transition-duration: 1.5s;
+}
+
+.gridItem6:hover {
+  transition-duration: 1.5s;
+  gap: 3rem;
+  & > .img1 {
+    transition-duration: 1.5s;
+    transform: scaleY(1.1);
+  }
+  & > .img2 {
+    transition-duration: 1.5s;
+    transform: scaleY(1.1);
+  }
+}
+
+.gridItem7:hover {
+  & > .shadow1 {
+    transition-duration: 1.5s;
+    transform: scaleY(1.25);
+  }
+  & > .shadowImage1 {
+    transition-duration: 1.5s;
+    transform: scaleY(1.15);
+  }
+}
+.semiContainer .gridItem7 {
+  margin-top: 11%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+  transition-duration: 1.5s;
+}
+.shadow1 {
+  background-color: rgba(247, 247, 247, 1);
+  height: 10em;
+  width: 13.55em;
+  border-radius: 1em;
+}
+.shadowImage1 {
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .root4 {
+    padding: 7rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gridContainer4 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 100%;
+    gap: 5%;
+  }
+
+  .gridContainer4 .gridItem4 {
+    padding: 0rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .gridItem4 h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .gridContainer4 .semiContainer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: start;
+    justify-content: end;
+    gap: 0.5rem;
+    position: relative;
+  }
+  .semiContainer .gridItem6 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 75%;
+    height: 75%;
+    margin-left: 2rem;
+  }
+  .semiContainer .gridItem7 {
+    margin-top: 11%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+  }
+  .shadow1 {
+    background-color: rgba(247, 247, 247, 1);
+    height: 10rem;
+    width: 20.55rem;
+    border-radius: 1.5rem;
+  }
+  .shadowImage1 {
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .root4 {
+    padding: 2rem 0rem;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gridContainer4 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 100%;
+    gap: 2%;
+  }
+
+  .gridContainer4 .gridItem4 {
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .gridItem4 h2 {
+    font-size: 1rem;
+    font-family: "Gilroy-Bold";
+    color: rgba(229, 132, 17, 1);
+  }
+
+  .gridItem4 h1 {
+    font-size: 2rem;
+    font-family: "Gilroy-Bold";
+    color: rgba(30, 30, 30, 1);
+  }
+
+  .gridItem4 p {
+    font-family: "Gilroy-Regular";
+    color: rgba(30, 30, 30, 1);
+    max-width: 100%;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .gridItem4 span {
+    margin-top: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Gilroy-Medium";
+    color: rgba(229, 132, 17, 1);
+    margin-bottom: 1rem;
+  }
+
+  .gridContainer4 .semiContainer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: start;
+    justify-content: end;
+    gap: 1rem;
+    position: relative;
+  }
+  .semiContainer .gridItem6 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    margin-left: 2rem;
+    gap: 2rem;
+  }
+  .semiContainer .gridItem7 {
+    margin-top: 11%;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+  .shadow1 {
+    background-color: rgba(247, 247, 247, 1);
+    height: 10em;
+    width: 13.55em;
+    border-radius: 1em;
+  }
+  .shadowImage1 {
+    position: absolute;
+    top: 2.5rem;
+    width: 100%;
+  }
+}

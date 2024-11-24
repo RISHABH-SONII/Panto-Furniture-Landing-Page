@@ -1,0 +1,215 @@
+.root4 {
+  padding: 4rem 0rem;
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gridContainer4 {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 49% 49%;
+  max-width: 100%;
+  gap: 2%;
+}
+.gridContainer4 .gridItem2 {
+  position: relative;
+  overflow: hidden;
+}
+.gridItem2:hover {
+  & > .shadow1 {
+    transition-duration: 1.5s;
+    transform: scale(1.35);
+  }
+  & > .shadow2 {
+    transition-duration: 1.5s;
+    transform: scale(1.15);
+  }
+  & > .shadowImage1 {
+    transform: scale(1.15);
+    transition-duration: 1.5s;
+  }
+}
+.shadow1 {
+  background-color: rgba(247, 247, 247, 1);
+  height: 10rem;
+  width: 25rem;
+  border-radius: 1em;
+  transition-duration: 1.5s;
+}
+.shadow2 {
+  background-color: rgba(247, 247, 247, 1);
+  height: 20rem;
+  width: 41rem;
+  border-radius: 1em;
+  transition-duration: 1.5s;
+}
+.shadowImage1 {
+  position: absolute;
+  top: 3rem;
+  transition-duration: 1.5s;
+}
+
+.gridContainer4 .gridItem3 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gridItem3 h2 {
+  font-family: "Gilroy-Bold";
+  color: rgba(229, 132, 17, 1);
+}
+
+.gridItem3 h1 {
+  font-size: 3rem;
+  font-family: "Gilroy-Bold";
+  color: rgba(30, 30, 30, 1);
+}
+
+.gridItem3 p {
+  font-family: "Gilroy-Regular";
+  color: rgba(30, 30, 30, 1);
+  max-width: 97%;
+  text-align: justify;
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+.gridItem3 span {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Gilroy-Medium";
+  color: rgba(229, 132, 17, 1);
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .root4 {
+    padding: 7rem 0rem;
+  }
+  .gridContainer4 {
+    grid-template-columns: 100%;
+    max-width: 100%;
+    gap: 10%;
+  }
+  .gridContainer4 .gridItem2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position: relative;
+  }
+  .shadow1 {
+    height: 7rem;
+    width: 20rem;
+  }
+  .shadow2 {
+    height: 11rem;
+    width: 27.5rem;
+  }
+  .shadowImage1 {
+    position: absolute;
+    align-items: center;
+    width: 25rem;
+  }
+
+  .gridContainer4 .gridItem3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .gridItem3 h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .root4 {
+    padding: 2rem 0rem;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gridContainer4 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 100%;
+    max-width: 100%;
+    gap: 2%;
+  }
+  .gridContainer4 .gridItem2 {
+    position: relative;
+  }
+  .shadow1 {
+    background-color: rgba(247, 247, 247, 1);
+    height: 7rem;
+    width: 17rem;
+    border-radius: 1em;
+  }
+  .shadow2 {
+    background-color: rgba(247, 247, 247, 1);
+    height: 11rem;
+    width: 22.5rem;
+    border-radius: 1em;
+  }
+  .shadowImage1 {
+    position: absolute;
+    top: 2.5rem;
+    width: 20rem;
+  }
+
+  .gridContainer4 .gridItem3 {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .gridItem3 h2 {
+    font-size: 1rem;
+    font-family: "Gilroy-Bold";
+    color: rgba(229, 132, 17, 1);
+  }
+
+  .gridItem3 h1 {
+    font-size: 2rem;
+    font-family: "Gilroy-Bold";
+    color: rgba(30, 30, 30, 1);
+  }
+
+  .gridItem3 p {
+    font-family: "Gilroy-Regular";
+    color: rgba(30, 30, 30, 1);
+    max-width: 85%;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .gridItem3 span {
+    margin-top: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Gilroy-Medium";
+    color: rgba(229, 132, 17, 1);
+    margin-bottom: 1rem;
+  }
+}

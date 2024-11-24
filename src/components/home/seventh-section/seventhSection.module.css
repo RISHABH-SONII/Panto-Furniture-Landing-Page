@@ -1,0 +1,246 @@
+.containers {
+  padding: 2em 0rem;
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(247, 247, 247, 1);
+  gap: 2rem;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+  width: 90%;
+  padding: 1rem;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1.5rem;
+  width: 25%;
+  margin-right: 25rem;
+}
+
+.column1 h3 {
+  font-size: 1.5rem;
+  font-family: "Gilroy-Bold";
+  color: rgba(30, 30, 30, 1);
+}
+.column1 p {
+  color: rgba(30, 30, 30, 1);
+  font-family: "Gilroy-Medium", sans-serif;
+  max-width: 100%;
+  line-height: 1.5rem;
+}
+
+.column2,
+.column3,
+.column4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 25%;
+}
+
+.column2 h4,
+.column3 h4,
+.column4 h4 {
+  font-family: DM Sans;
+  color: rgba(246, 151, 63, 1);
+}
+
+.column2 ul,
+.column3 ul,
+.column4 ul {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.column2 ul li,
+.column3 ul li,
+.column4 ul li {
+  font-family: "Gilroy-Medium";
+  color: rgba(30, 30, 30, 1);
+  line-height: 2em;
+}
+
+.column4 ul a {
+  font-family: "Gilroy-Medium";
+  color: rgba(30, 30, 30, 1);
+  text-decoration: none;
+}
+
+.column4 ul li a {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5em;
+}
+
+.link1:hover {
+  color: #1877f2;
+}
+.link2:hover {
+  color: #ffaa00;
+}
+.link3:hover {
+  color: #dd2a7b;
+}
+.container2 {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 60% 20% 20%;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1rem;
+}
+.container2 .column6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container2 .column7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container2 .column5 p {
+  font-family: DM Sans;
+  color: rgba(30, 40, 51, 1);
+}
+
+.container2 .column6 a {
+  font-family: "Gilroy-Medium";
+  color: rgba(30, 30, 30, 1);
+  text-decoration: none;
+}
+
+.container2 .column7 a {
+  font-family: "Gilroy-Medium";
+  color: rgba(30, 30, 30, 1);
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .containers {
+    padding: 2em 0rem;
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(247, 247, 247, 1);
+    gap: 2rem;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 5%;
+    width: 90%;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .column1 h3 {
+    font-size: 1.5rem;
+    font-family: "Gilroy-Bold";
+    color: rgba(30, 30, 30, 1);
+  }
+  .column1 p {
+    color: rgba(30, 30, 30, 1);
+    font-family: "Gilroy-Medium";
+    max-width: 100%;
+    line-height: 1.5rem;
+  }
+
+  .column2,
+  .column3,
+  .column4 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 25%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .containers {
+    padding: 2em 0rem;
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(247, 247, 247, 1);
+    gap: 2rem;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 5%;
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1.5rem;
+    width: 100%;
+    margin-right: 25rem;
+  }
+
+  .column1 h3 {
+    font-size: 1.5rem;
+    font-family: "Gilroy-Bold";
+    color: rgba(30, 30, 30, 1);
+  }
+  .column1 p {
+    color: rgba(30, 30, 30, 1);
+    font-family: "Gilroy-Medium";
+    max-width: 100%;
+    line-height: 1.5rem;
+  }
+
+  .column2,
+  .column3,
+  .column4 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 25%;
+  }
+}

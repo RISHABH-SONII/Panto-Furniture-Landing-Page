@@ -1,0 +1,103 @@
+.root {
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gridContainer {
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: 23% 20% 20% 20%;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 5%;
+  width: 90%;
+}
+
+.gridItem h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Gilroy-Bold";
+  color: rgba(30, 30, 30, 1);
+}
+
+.gridItem1 h3 {
+  font-family: "Gilroy-Bold";
+  margin-bottom: 1em;
+}
+
+.gridItem1 p {
+  font-family: "Gilroy-Regular";
+  line-height: 1.5em;
+}
+
+.gridItem1 span {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-family: "Gilroy-Medium";
+  color: rgba(229, 132, 17, 1);
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .gridItem h1 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .root {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100%;
+  }
+  .gridContainer {
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 5%;
+    max-width: 85%;
+  }
+
+  .gridContainer .gridItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gridItem h1 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Gilroy-Bold";
+    color: rgba(30, 30, 30, 1);
+  }
+
+  .gridItem1 h3 {
+    font-family: "Gilroy-Bold";
+    margin-bottom: 0.75rem;
+  }
+
+  .gridItem1 p {
+    font-family: "Gilroy-Regular";
+    line-height: 1.5rem;
+  }
+
+  .gridItem1 span {
+    font-size: 0.75rem;
+  }
+}

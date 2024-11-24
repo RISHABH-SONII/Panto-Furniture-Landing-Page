@@ -1,0 +1,148 @@
+.cardLayout {
+  padding: 0;
+  margin: 0;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 1em 1em;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0 0 20px 20px;
+}
+
+.chairImages {
+  display: flex;
+  justify-content: center;
+  height: 15em;
+  width: 12em;
+}
+.card p {
+  color: rgba(141, 141, 141, 1);
+}
+
+.cardLayout .starRatings {
+  margin-left: -0.25em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.card h3 {
+  color: rgba(13, 27, 57, 1);
+}
+
+.priceDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.priceDiv button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .cardLayout {
+    padding: 0rem 0rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chairImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0rem;
+    height: 10rem;
+    width: 7rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    min-width: 10rem;
+  }
+
+  .card p {
+    color: rgba(141, 141, 141, 1);
+  }
+
+  .cardLayout .starRatings {
+    margin-left: 0rem;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .priceDiv {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cardLayout {
+    padding: 0rem 0rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chairImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0rem;
+    height: 10rem;
+    width: 7rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    min-width: 10rem;
+    font-size: 0.75rem;
+  }
+
+  .card p {
+    color: rgba(141, 141, 141, 1);
+  }
+
+  .cardLayout .starRatings {
+    margin-left: 0rem;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .priceDiv {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
